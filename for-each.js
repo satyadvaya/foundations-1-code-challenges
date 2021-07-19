@@ -54,13 +54,10 @@ export function makeSpanishLanguageArray(arr) {
     arr.forEach((thing) => {
         spanishPets.push(
             {
-                'nombre' : thing['name'], 
-                'tipo' : thing['type']
+            'nombre' : thing['name'], 
+            'tipo' : thing['type']
             }
-            );
-        // delete thing.name;
-        // spanishPets.push(thing['tipo'] = thing['type']);
-        // delete thing.type;
+        );
     })
     return spanishPets;
 }
