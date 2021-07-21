@@ -52,7 +52,10 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    const newArray = arr.map((thing) => {
+        return {'name': thing.name.toUpperCase(), 'type': thing.type}
+    })
+    return newArray;
 }
 
 /*
